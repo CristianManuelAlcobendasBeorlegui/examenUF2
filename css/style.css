@@ -16,6 +16,11 @@ h1 {
     overflow: hidden;
 }
 
+.heroImage > img {
+    box-sizing: border-box;
+    width: 100%;
+}
+
 .orange-transparency {
     position: absolute;
     background-color: rgba(0, 247, 255, 0.388);
@@ -34,4 +39,22 @@ h1 {
 .inside-image img {
     box-sizing: border-box;
     max-width: 70%;
+    animation-name: moveCar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes moveCar {
+    from {
+        left: 0;
+    }
+    
+    to {
+        left: 100%;
+        transform: scaleX(-1);
+    }
 }
