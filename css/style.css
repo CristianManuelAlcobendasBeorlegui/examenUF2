@@ -11,6 +11,9 @@ h1 {
 
 .heroImage {
     position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .orange-transparency {
@@ -25,4 +28,10 @@ h1 {
 .inside-image {
     position: absolute;
     bottom: 1em;
+    width: 50%;
+}
+
+.inside-image img {
+    box-sizing: border-box;
+    max-width: 70%;
 }
